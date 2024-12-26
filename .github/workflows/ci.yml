@@ -6,11 +6,11 @@ on:
   pull_request:
     branches: ["main"]
 
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps: 
+jobs:
+   build:
+     runs-on: ubuntu-latest
+     steps: 
         - name: pull repo
-        uses: actions/checkout@v4
+          uses: actions/checkout@v4
         - name: Hello world
-        run: echo 'hello world'
+          run: echo hello world
