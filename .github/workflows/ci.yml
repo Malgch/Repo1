@@ -13,4 +13,4 @@ jobs:
         - name: pull repo
           uses: actions/checkout@v4
         - name: Hello world
-          run: echo hello world
+          run: echo 'hello world'
