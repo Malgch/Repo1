@@ -20,7 +20,7 @@ def convert():
         currency_code = request.form['currency_code']
         rate = get_exchange_rate(currency_code)
         if rate is not None:
-            converted_amount = amount * rate
+            converted_amount = amount * ( 1 / rate)
             return jsonify({"converted_amount": round(converted_amount, 2)})
         else:
             return jsonify({"error": "Failed to fetch"}), 500
