@@ -1,0 +1,17 @@
+
+my-app (alpine 3.20.3)
+======================
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+
+
+Python (python-pkg)
+===================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+
+┌────────────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────┐
+│    Library     │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                          Title                           │
+├────────────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
+│ pip (METADATA) │ CVE-2023-5752 │ MEDIUM   │ fixed  │ 23.2.1            │ 23.3          │ pip: Mercurial configuration injectable in repo revision │
+│                │               │          │        │                   │               │ when installing via pip                                  │
+│                │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5752                │
+└────────────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────┘
