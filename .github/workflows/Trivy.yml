@@ -24,9 +24,9 @@ jobs:
 
     - name: Scan Docker
       run: |
-        set -e
-        mkdir -p reports
-        trivy image --format table --output reports/trivy-report.txt my-app
+          set -e
+          mkdir -p reports
+          trivy image --format table --output reports/trivy-report.txt my-app
 
     - name: Upload Trivy Report as Artifact
       uses: actions/upload-artifact@v3
@@ -43,5 +43,5 @@ jobs:
           git add reports/trivy-report.txt
           git commit -m "Updated Trivy report"
           git push origin main
-        else
-          echo "No changes"
+            else
+              echo "No changes"
