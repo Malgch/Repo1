@@ -43,5 +43,6 @@ jobs:
           git add reports/trivy-report.txt
           git commit -m "Updated Trivy report"
           git push origin main
-            else
-              echo "No changes"
+        else
+          echo "No changes"
+        fi
